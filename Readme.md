@@ -34,14 +34,15 @@ If it is not specified it will be read from ./classification/config.ini.
 
 #### Structure
 - ```./notebooks```: Jupyter Notebook with EDA, feature extraction, statistical study and framework classification
-- ```./feature_extraction```:
+- ```./feature_extraction```: contains the files for feature extraction with PyRadiomics library
 - ```./feature_extraction/feature_extraction.py```: launches the code for extracting features with Pyradiomics 
-- ```./feature_extraction/config.ini```: configuration file with the folder paths:``patients_path`` folder parent of the patients 
+- ```./feature_extraction/config.ini```: configuration file with the folder paths. The parameters are: ``patients_path`` folder parent of the patients 
 folders, ``settings_name``: YAML file for PyRadiomics, ``db_path``: file with the Record ID, Image, Label, pixel spacing x, ROI pixels of every image
 - ```./classification```: executes a K-fold cross-validation with Scikit-Learn for a combination of models defined in algorithms.py
 - ```./classification/results```: CSV with the scores and information of the models for every experiment
-- ```./data```: contains the CSV of the extracted texture features extracted from PyRadiomics library and in-house code (see notebook 1.prepare_data.ipynb). 
-
+- ```./data```: contains the CSV of the texture features extracted from PyRadiomics library and in-house code (see notebook 1.prepare_data.ipynb) in different folders (anterior, dummy...). In 
+the data there are CSV files needed to extract the features with the attributes: Record ID (patient ID), Image (image name), 
+Pixel spacing x (pixel spacing in mm), ROI pixels (number of pixels of the corresponding ROI), Label (target variable). 
 
 # Installation and requirements
 git clone https://github.com/Lcobbar/quantitative-texture-analysis   
