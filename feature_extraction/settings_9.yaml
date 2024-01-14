@@ -1,0 +1,45 @@
+# #############################  Extracted using PyRadiomics version: v3.0.1  ######################################
+
+imageType:
+  Original: {}
+
+
+featureClass:
+  firstorder:
+    - 'Mean'
+    - 'RootMeanSquared'
+    - 'StandardDeviation'
+    - '10Percentile'
+    - '90Percentile'
+    - 'Median'
+    - 'Energy'
+    - 'Entropy'
+    - 'Skewness'
+    - 'Kurtosis'
+    - 'Variance'
+  glcm:
+  glrlm:
+  glszm:
+  ngtdm:
+
+setting:
+  # Normalization:
+  normalize: False
+  normalizeScale: 50
+
+  # Resampling:
+  interpolator: 'sitkLinear'
+  resampledPixelSpacing: [0.1, 0.1, 0]
+
+  # 2D settings
+  force2D: true
+  force2Ddimension: 0
+  
+  # Image discretization:
+  binCount: 128
+
+  # Misc:
+  label: 1
+  minimumROISize: 400
+  additionalInfo : False
+  distances : [1,2,3,4,5]

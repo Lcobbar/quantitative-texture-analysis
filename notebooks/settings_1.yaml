@@ -1,0 +1,32 @@
+# #############################  Extracted using PyRadiomics version: v3.0.1  ######################################
+
+imageType:
+  Original: {}
+
+
+featureClass:
+  firstorder:
+    - 'Range'
+
+setting:
+  # Normalization:
+  normalize: True
+  normalizeScale: 50
+  removeOutliers: 3
+
+  # Resampling:
+  interpolator: 'sitkLinear'
+  resampledPixelSpacing: [0.1, 0.1, 0]
+
+  # 2D settings
+  force2D: true
+  force2Ddimension: 0
+  
+  # Image discretization:
+  # This parameter should be estimated by analyzing the dataset firstorder range and chosen to be as close as possible to the 30-130 range. 
+  binWidth: 2
+
+  # Misc:
+  label: 1
+  minimumROISize: 400
+  additionalInfo : False

@@ -1,0 +1,43 @@
+# #############################  Extracted using PyRadiomics version: v3.0.1  ######################################
+
+imageType:
+  Wavelet:
+    binWidth : 1
+
+featureClass:
+  firstorder:
+    - 'Mean'
+    - 'RootMeanSquared'
+    - 'StandardDeviation'
+    - '10Percentile'
+    - '90Percentile'
+    - 'Median'
+    - 'Energy'
+    - 'Entropy'
+    - 'Skewness'
+    - 'Kurtosis'
+    - 'Variance'
+  glcm:
+  glrlm:
+  glszm:
+  ngtdm:
+
+setting:
+  # Normalization:
+  normalize: False
+  normalizeScale: 50
+  removeOutliers: 3
+
+  # 2D settings
+  force2D: true
+  force2Ddimension: 0
+  
+  # Image discretization:
+  # This parameter should be estimated by analyzing the dataset firstorder range and chosen to be as close as possible to the 30-130 range. 
+  binWidth: 2
+
+  # Misc:
+  label: 1
+  minimumROISize: 400
+  additionalInfo : False
+  distances : [1,2,3,4,5]
