@@ -33,7 +33,8 @@ The `--input_features` parameter is the path to the CSV file with the extracted 
 If it is not specified it will be read from ./classification/config.ini. 
 
 #### Structure
-- ```./notebooks```: Jupyter Notebook with EDA, feature extraction, statistical study and framework classification
+- ```./notebooks```: Jupyter Notebook with EDA, creation of CSV from which do the feature extraction, feature extraction with PyRadiomics and 
+in-house code (notebook 1), statistical study (notebook 2) and framework classification (notebook 3).
 - ```./feature_extraction```: contains the files for feature extraction with PyRadiomics library
 - ```./feature_extraction/feature_extraction.py```: launches the code for extracting features with Pyradiomics 
 - ```./feature_extraction/config.ini```: configuration file with the folder paths. The parameters are: ``patients_path`` folder parent of the patients 
