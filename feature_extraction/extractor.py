@@ -44,7 +44,7 @@ class Extractor:
             settings_number = settings_name.split('_')[1].split('.')[0]
         except IndexError:
             settings_number = '1'
-        self.output_path = os.path.join('./data/{}/'.format(features_output), "features_{}.csv".format(settings_number))
+        self.output_path = os.path.join('../data/{}/'.format(features_output), "features_{}.csv".format(settings_number))
 
     def post_process_features(self):
         roi_transforms = {
